@@ -43,7 +43,7 @@ export default function LandingPage() {
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-yellow-50">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
-        <div className="container flex h-16 items-center justify-between px-4">
+        <div className="container flex h-16 items-center justify-between px-4 md:px-8 lg:px-12">
           <div className="flex items-center space-x-2">
             <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl shadow-lg">
               <Brain className="h-6 w-6 text-white" />
@@ -81,12 +81,14 @@ export default function LandingPage() {
             <Button variant="ghost" size="sm" className="hidden md:inline-flex text-gray-700 hover:text-purple-600">
               Prijavi se
             </Button>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg"
-            >
-              Počni besplatno ✨
-            </Button>
+            <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="sm"
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg"
+              >
+                Počni besplatno ✨
+              </Button>
+            </Link>
             <Button variant="ghost" size="sm" className="md:hidden">
               <Menu className="h-4 w-4" />
             </Button>
@@ -104,7 +106,7 @@ export default function LandingPage() {
             <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-purple-300 rounded-full opacity-20 animate-bounce delay-1000"></div>
           </div>
 
-          <div className="container px-4 md:px-6 relative">
+          <div className="container px-4 md:px-8 lg:px-12 xl:px-16 relative">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-6">
                 <div className="space-y-4">
@@ -149,13 +151,15 @@ export default function LandingPage() {
                 </div>
 
                 <div className="flex flex-col gap-3 min-[400px]:flex-row">
-                  <Button
-                    size="lg"
-                    className="h-14 px-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-xl text-lg font-semibold"
-                  >
-                    Počni zabavu! 🚀
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="lg"
+                      className="h-14 px-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-xl text-lg font-semibold"
+                    >
+                      Počni zabavu! 🚀
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
                   <Button
                     variant="outline"
                     size="lg"
@@ -206,14 +210,14 @@ export default function LandingPage() {
 
         {/* Categories Preview with more fun styling */}
         <section className="w-full py-12 bg-white">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">Prati sve što potrošiš!</h2>
               <p className="text-gray-600 text-lg">
                 AI automatski sortira troškove i daje ti savete koji te neće uspavati 😴
               </p>
             </div>
-            <div className="grid grid-cols-4 md:grid-cols-8 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-8 gap-4 max-w-6xl mx-auto">
               {categories.map((cat, index) => {
                 const IconComponent = cat.icon
                 const colors = [
@@ -246,7 +250,7 @@ export default function LandingPage() {
 
         {/* Features Section with more personality */}
         <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-purple-50 to-pink-50">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -263,7 +267,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="mx-auto grid max-w-5xl items-center gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="mx-auto grid max-w-7xl items-center gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="grid gap-6">
                 <Card className="border-2 border-purple-200 bg-white hover:shadow-xl transition-shadow">
                   <CardHeader>
@@ -356,7 +360,7 @@ export default function LandingPage() {
 
         {/* How it Works with more fun */}
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -369,7 +373,7 @@ export default function LandingPage() {
               </h2>
             </div>
 
-            <div className="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-3">
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white text-2xl font-bold shadow-xl">
                   1
@@ -408,7 +412,7 @@ export default function LandingPage() {
           id="testimonials"
           className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-yellow-50 to-orange-50"
         >
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -421,7 +425,7 @@ export default function LandingPage() {
               </h2>
             </div>
 
-            <div className="mx-auto grid max-w-5xl items-center gap-6 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-7xl items-center gap-6 lg:grid-cols-3">
               <Card className="border-2 border-yellow-200 bg-white hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <div className="flex items-center space-x-1">
@@ -514,7 +518,7 @@ export default function LandingPage() {
 
         {/* Pricing with more fun */}
         <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -527,7 +531,7 @@ export default function LandingPage() {
               </h2>
             </div>
 
-            <div className="mx-auto grid max-w-4xl items-center gap-6 lg:grid-cols-2">
+            <div className="mx-auto grid max-w-6xl items-center gap-6 lg:grid-cols-2">
               <Card className="border-2 border-gray-200 bg-white hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-gray-900 text-2xl">Besplatno 🆓</CardTitle>
@@ -553,9 +557,11 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full text-lg h-12" variant="outline">
-                    Počni besplatno! 🚀
-                  </Button>
+                  <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full text-lg h-12" variant="outline">
+                      Počni besplatno! 🚀
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
 
@@ -597,9 +603,11 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg h-12 shadow-lg">
-                    Počni Premium! ✨
-                  </Button>
+                  <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg h-12 shadow-lg">
+                      Počni Premium! ✨
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             </div>
@@ -615,7 +623,7 @@ export default function LandingPage() {
             <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-ping"></div>
           </div>
 
-          <div className="container px-4 md:px-6 relative">
+          <div className="container px-4 md:px-8 lg:px-12 relative">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
                 Spreman za finansijsku <span className="text-yellow-300">revoluciju</span>?
@@ -625,13 +633,15 @@ export default function LandingPage() {
                 te čeka! 🤖💰
               </p>
               <div className="flex flex-col gap-4 min-[400px]:flex-row">
-                <Button
-                  size="lg"
-                  className="h-16 px-12 bg-white text-purple-600 hover:bg-gray-100 text-xl font-bold shadow-2xl"
-                >
-                  Počni zabavu ODMAH! 🎉
-                  <ArrowRight className="ml-3 h-6 w-6" />
-                </Button>
+                <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="h-16 px-12 bg-white text-purple-600 hover:bg-gray-100 text-xl font-bold shadow-2xl"
+                  >
+                    Počni zabavu ODMAH! 🎉
+                    <ArrowRight className="ml-3 h-6 w-6" />
+                  </Button>
+                </Link>
                 <Button
                   variant="outline"
                   size="lg"
@@ -652,7 +662,7 @@ export default function LandingPage() {
 
       {/* Footer with personality */}
       <footer className="w-full border-t bg-gray-50 text-gray-900">
-        <div className="container px-4 md:px-6 py-12">
+        <div className="container px-4 md:px-8 lg:px-12 py-12">
           <div className="grid gap-8 lg:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
