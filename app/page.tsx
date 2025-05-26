@@ -43,7 +43,7 @@ export default function LandingPage() {
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-yellow-50">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-8 lg:px-12">
+        <div className="w-full max-w-none flex h-16 items-center justify-between px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
           <div className="flex items-center space-x-2">
             <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl shadow-lg">
               <Brain className="h-6 w-6 text-white" />
@@ -106,8 +106,8 @@ export default function LandingPage() {
             <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-purple-300 rounded-full opacity-20 animate-bounce delay-1000"></div>
           </div>
 
-          <div className="container px-4 md:px-8 lg:px-12 xl:px-16 relative">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+          <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 relative">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16 2xl:gap-24 items-center">
               <div className="flex flex-col justify-center space-y-6">
                 <div className="space-y-4">
                   <Badge
@@ -189,10 +189,10 @@ export default function LandingPage() {
                 <div className="relative">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                    width="400"
-                    height="600"
+                    width="500"
+                    height="750"
                     alt="KeshCheck App - AI finansijski savetnik sa dozom humora"
-                    className="mx-auto rounded-3xl shadow-2xl"
+                    className="mx-auto rounded-3xl shadow-2xl w-full max-w-md lg:max-w-lg xl:max-w-xl"
                     priority
                   />
                   {/* Subtle floating elements that don't compete with the real image */}
@@ -210,7 +210,7 @@ export default function LandingPage() {
 
         {/* Categories Preview with more fun styling */}
         <section className="w-full py-12 bg-white">
-          <div className="container px-4 md:px-8 lg:px-12">
+          <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">Prati sve što potrošiš!</h2>
               <p className="text-gray-600 text-lg">
@@ -250,7 +250,7 @@ export default function LandingPage() {
 
         {/* Features Section with more personality */}
         <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-purple-50 to-pink-50">
-          <div className="container px-4 md:px-8 lg:px-12">
+          <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -360,7 +360,7 @@ export default function LandingPage() {
 
         {/* How it Works with more fun */}
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container px-4 md:px-8 lg:px-12">
+          <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -412,7 +412,7 @@ export default function LandingPage() {
           id="testimonials"
           className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-yellow-50 to-orange-50"
         >
-          <div className="container px-4 md:px-8 lg:px-12">
+          <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -518,7 +518,7 @@ export default function LandingPage() {
 
         {/* Pricing with more fun */}
         <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container px-4 md:px-8 lg:px-12">
+          <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <Badge
                 variant="secondary"
@@ -623,7 +623,7 @@ export default function LandingPage() {
             <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-ping"></div>
           </div>
 
-          <div className="container px-4 md:px-8 lg:px-12 relative">
+          <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 relative">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
                 Spreman za finansijsku <span className="text-yellow-300">revoluciju</span>?
@@ -662,7 +662,7 @@ export default function LandingPage() {
 
       {/* Footer with personality */}
       <footer className="w-full border-t bg-gray-50 text-gray-900">
-        <div className="container px-4 md:px-8 lg:px-12 py-12">
+        <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 py-12">
           <div className="grid gap-8 lg:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
