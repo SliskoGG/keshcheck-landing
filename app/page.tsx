@@ -638,7 +638,7 @@ export default function LandingPage() {
                     size="lg"
                     className="h-16 px-12 bg-white text-purple-600 hover:bg-gray-100 text-xl font-bold shadow-2xl"
                   >
-                    Počni zabavu ODMAH! 🎉
+                    Počni štednju ODMAH! 🎉
                     <ArrowRight className="ml-3 h-6 w-6" />
                   </Button>
                 </Link>
