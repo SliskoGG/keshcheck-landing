@@ -582,7 +582,7 @@ export default function LandingPage() {
                   <ul className="space-y-3">
                     <li className="flex items-center space-x-2">
                       <Zap className="h-5 w-5 text-green-500" />
-                      <span className="text-gray-700">Napredni AI saveti (još zabavniji!) 🤖</span>
+                      <span className="text-gray-700">Napredni AI saveti 🤖</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <Zap className="h-5 w-5 text-green-500" />
