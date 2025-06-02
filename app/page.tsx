@@ -104,9 +104,9 @@ export default function LandingPage() {
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-300 rounded-full opacity-20 animate-bounce"></div>
             <div className="absolute top-40 right-20 w-16 h-16 bg-pink-300 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-purple-300 rounded-full opacity-20 animate-bounce delay-1000"></div>
+            <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-purple-300 rounded-full opacity-20 animate-bounce"></div>
             <div className="absolute top-1/2 right-1/3 w-8 h-8 bg-orange-300 rounded-full opacity-15 animate-ping"></div>
-            <div className="absolute bottom-1/3 right-10 w-14 h-14 bg-blue-300 rounded-full opacity-20 animate-pulse delay-500"></div>
+            <div className="absolute bottom-1/3 right-10 w-14 h-14 bg-blue-300 rounded-full opacity-20 animate-pulse"></div>
           </div>
 
           <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 relative">
@@ -117,13 +117,13 @@ export default function LandingPage() {
                 <div className="space-y-6">
                   <Badge
                     variant="secondary"
-                    className="w-fit bg-gradient-to-r from-yellow-200 to-orange-200 text-orange-800 border-orange-300 shadow-sm animate-pulse"
+                    className="w-fit bg-gradient-to-r from-yellow-200 to-orange-200 text-orange-800 border-orange-300 shadow-sm"
                   >
                     💰 Finansije koje ne dosađuju!
                   </Badge>
                   
                   <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl 2xl:text-7xl text-gray-900 leading-tight">
-                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent animate-pulse">
+                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">
                       Tvoj AI drugar
                     </span>
                     <br />
@@ -139,13 +139,13 @@ export default function LandingPage() {
                 {/* Enhanced AI Example with glassmorphism */}
                 <div className="bg-white/80 backdrop-blur-sm p-6 rounded-3xl border-2 border-purple-200 shadow-xl relative hover:shadow-2xl transition-all duration-300">
                   <div className="absolute -top-3 -right-3">
-                    <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full p-3 shadow-lg animate-bounce">
-                      <Laugh className="w-5 h-5 text-white" />
+                    <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full p-3 shadow-lg">
+                      <span className="text-white text-lg">😂</span>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
-                      <Brain className="w-6 h-6 text-white" />
+                      <span className="text-white text-lg">🤖</span>
                     </div>
                     <div className="flex-1">
                       <p className="text-sm text-purple-600 mb-2 font-semibold">Tvoj AI finansijski drugar kaže:</p>
@@ -165,7 +165,7 @@ export default function LandingPage() {
                       className="h-16 px-10 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-2xl text-lg xl:text-xl font-semibold rounded-2xl transform hover:scale-105 transition-all duration-300"
                     >
                       Počni zabavu! 🚀
-                      <ArrowRight className="ml-3 h-6 w-6" />
+                      <span className="ml-3">→</span>
                     </Button>
                   </Link>
                   <Button
@@ -180,92 +180,66 @@ export default function LandingPage() {
                 {/* Enhanced feature highlights */}
                 <div className="flex flex-wrap items-center gap-6 text-sm xl:text-base text-gray-600">
                   <div className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
-                    <Star className="h-5 w-5 text-yellow-500 fill-current" />
+                    <span className="text-yellow-500">⭐</span>
                     <span className="font-medium">Besplatno 30 dana</span>
                   </div>
                   <div className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
-                    <Smartphone className="h-5 w-5 text-green-500" />
+                    <span className="text-green-500">📱</span>
                     <span className="font-medium">iOS & Android</span>
                   </div>
                   <div className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
-                    <Sparkles className="h-5 w-5 text-purple-500" />
+                    <span className="text-purple-500">✨</span>
                     <span className="font-medium">Bez dosade!</span>
                   </div>
                 </div>
               </div>
 
-              {/* Right Column - Enhanced Image Carousel */}
+              {/* Right Column - Enhanced Image Display */}
               <div className="flex items-center justify-center order-1 lg:order-2">
                 <div className="relative w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl">
                   
-                  {/* Main carousel container with glassmorphism */}
+                  {/* Main container with glassmorphism */}
                   <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
                     
-                    {/* Carousel images - we'll rotate through these */}
+                    {/* Primary app image with enhanced effects */}
                     <div className="relative overflow-hidden rounded-2xl">
-                      <div className="carousel-container">
-                        {/* Primary app image */}
-                        <div className="carousel-slide active">
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                            width="400"
-                            height="800"
-                            alt="KeshCheck App - AI finansijski savetnik"
-                            className="mx-auto rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500"
-                            priority
-                          />
-                        </div>
-                        
-                        {/* We can add more slides here with different app screens */}
-                        <div className="carousel-slide">
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                            width="400"
-                            height="800"
-                            alt="KeshCheck Dashboard"
-                            className="mx-auto rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500 opacity-80 saturate-150"
-                            style={{ filter: 'hue-rotate(30deg)' }}
-                          />
-                        </div>
-                        
-                        <div className="carousel-slide">
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                            width="400"
-                            height="800"
-                            alt="KeshCheck Analytics"
-                            className="mx-auto rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500 opacity-80 saturate-150"
-                            style={{ filter: 'hue-rotate(60deg)' }}
-                          />
-                        </div>
-                      </div>
-                      
-                      {/* Carousel navigation dots */}
-                      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                        <div className="carousel-dot active w-3 h-3 bg-white rounded-full shadow-lg cursor-pointer"></div>
-                        <div className="carousel-dot w-3 h-3 bg-white/50 rounded-full shadow-lg cursor-pointer"></div>
-                        <div className="carousel-dot w-3 h-3 bg-white/50 rounded-full shadow-lg cursor-pointer"></div>
-                      </div>
+                      <Image
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                        width="400"
+                        height="800"
+                        alt="KeshCheck App - AI finansijski savetnik"
+                        className="mx-auto rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500"
+                        priority
+                      />
                     </div>
                     
-                    {/* Enhanced floating elements with better positioning */}
+                    {/* Enhanced floating elements with emojis */}
                     <div className="absolute -top-6 -right-6 bg-gradient-to-r from-yellow-400 to-orange-400 p-3 rounded-2xl shadow-xl animate-pulse">
-                      <Sparkles className="h-6 w-6 text-white" />
+                      <span className="text-white text-xl">✨</span>
                     </div>
                     <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-green-400 to-blue-400 p-3 rounded-2xl shadow-xl animate-bounce">
-                      <TrendingUp className="h-6 w-6 text-white" />
+                      <span className="text-white text-xl">📈</span>
                     </div>
                     <div className="absolute top-1/4 -left-4 bg-gradient-to-r from-pink-400 to-purple-400 p-2 rounded-xl shadow-lg animate-ping">
-                      <Heart className="h-4 w-4 text-white" />
+                      <span className="text-white text-sm">💝</span>
                     </div>
-                    <div className="absolute top-3/4 -right-4 bg-gradient-to-r from-indigo-400 to-purple-400 p-2 rounded-xl shadow-lg animate-pulse delay-700">
-                      <Zap className="h-4 w-4 text-white" />
+                    <div className="absolute top-3/4 -right-4 bg-gradient-to-r from-indigo-400 to-purple-400 p-2 rounded-xl shadow-lg animate-pulse">
+                      <span className="text-white text-sm">⚡</span>
+                    </div>
+                    
+                    {/* Additional floating money emojis for fintech theme */}
+                    <div className="absolute top-1/2 left-0 transform -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-500 p-2 rounded-full shadow-lg animate-bounce delay-300">
+                      <span className="text-white text-lg">💰</span>
+                    </div>
+                    <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 bg-gradient-to-r from-yellow-500 to-orange-500 p-2 rounded-full shadow-lg animate-pulse delay-500">
+                      <span className="text-white text-lg">💸</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
 
           {/* Custom CSS for carousel animation */}
           <style jsx>{`
