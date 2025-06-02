@@ -98,51 +98,58 @@ export default function LandingPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
-          {/* Fun background elements */}
+       {/* Hero Section - IMPROVED VERSION */}
+        <section className="w-full py-16 md:py-24 lg:py-32 xl:py-40 relative overflow-hidden min-h-[90vh] flex items-center">
+          {/* Enhanced background elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-300 rounded-full opacity-20 animate-bounce"></div>
             <div className="absolute top-40 right-20 w-16 h-16 bg-pink-300 rounded-full opacity-20 animate-pulse"></div>
             <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-purple-300 rounded-full opacity-20 animate-bounce delay-1000"></div>
+            <div className="absolute top-1/2 right-1/3 w-8 h-8 bg-orange-300 rounded-full opacity-15 animate-ping"></div>
+            <div className="absolute bottom-1/3 right-10 w-14 h-14 bg-blue-300 rounded-full opacity-20 animate-pulse delay-500"></div>
           </div>
 
           <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 relative">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16 2xl:gap-24 items-center">
-              <div className="flex flex-col justify-center space-y-6">
-                <div className="space-y-4">
+            <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 xl:gap-24 items-center min-h-[70vh]">
+              
+              {/* Left Column - Text Content */}
+              <div className="flex flex-col justify-center space-y-8 order-2 lg:order-1">
+                <div className="space-y-6">
                   <Badge
                     variant="secondary"
-                    className="w-fit bg-gradient-to-r from-yellow-200 to-orange-200 text-orange-800 border-orange-300 shadow-sm"
+                    className="w-fit bg-gradient-to-r from-yellow-200 to-orange-200 text-orange-800 border-orange-300 shadow-sm animate-pulse"
                   >
-                    Finansije od kojih ne boli glava.
+                    💰 Finansije koje ne dosađuju!
                   </Badge>
-                  <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl text-gray-900">
-                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">
+                  
+                  <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl 2xl:text-7xl text-gray-900 leading-tight">
+                    <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent animate-pulse">
                       Tvoj AI drugar
                     </span>
                     <br />
                     <span className="text-gray-900">za pametne finansije!</span>
                   </h1>
-                  <p className="max-w-[600px] text-gray-700 md:text-xl leading-relaxed">
+                  
+                  <p className="max-w-[600px] text-gray-700 md:text-xl xl:text-2xl leading-relaxed">
                     Zaboravi dosadne finansijske aplikacije! KeshCheck ima AI koji te <strong>stvarno razume</strong>,
                     daje ti savete sa dozom humora i pomaže ti da uštediš - bez dosađivanja! 😄
                   </p>
                 </div>
 
-                {/* AI Example with more fun styling */}
-                <div className="bg-white p-5 rounded-2xl border-2 border-purple-200 shadow-lg relative">
-                  <div className="absolute -top-2 -right-2">
-                    <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full p-2">
-                      <Laugh className="w-4 h-4 text-white" />
+                {/* Enhanced AI Example with glassmorphism */}
+                <div className="bg-white/80 backdrop-blur-sm p-6 rounded-3xl border-2 border-purple-200 shadow-xl relative hover:shadow-2xl transition-all duration-300">
+                  <div className="absolute -top-3 -right-3">
+                    <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full p-3 shadow-lg animate-bounce">
+                      <Laugh className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center shadow-md">
-                      <Brain className="w-5 h-5 text-white" />
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
+                      <Brain className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm text-purple-600 mb-1 font-medium">Tvoj AI finansijski drugar kaže:</p>
-                      <p className="text-gray-900 font-medium text-lg">
+                      <p className="text-sm text-purple-600 mb-2 font-semibold">Tvoj AI finansijski drugar kaže:</p>
+                      <p className="text-gray-900 font-medium text-lg xl:text-xl">
                         "€25 na kafu ove nedelje? Možda je vreme za neki kućni aparat? 😅 Ali nije loše, video sam i
                         gore slučajeve!"
                       </p>
@@ -150,62 +157,210 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 min-[400px]:flex-row">
+                {/* Enhanced CTA Buttons */}
+                <div className="flex flex-col gap-4 sm:flex-row">
                   <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <Button
                       size="lg"
-                      className="h-14 px-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-xl text-lg font-semibold"
+                      className="h-16 px-10 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-2xl text-lg xl:text-xl font-semibold rounded-2xl transform hover:scale-105 transition-all duration-300"
                     >
-                      Počni zabavu!
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      Počni zabavu! 🚀
+                      <ArrowRight className="ml-3 h-6 w-6" />
                     </Button>
                   </Link>
                   <Button
                     variant="outline"
                     size="lg"
-                    className="h-14 px-8 border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-semibold"
+                    className="h-16 px-10 border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-semibold rounded-2xl text-lg xl:text-xl backdrop-blur-sm bg-white/50 transform hover:scale-105 transition-all duration-300"
                   >
-                    Pogledaj demo 
+                    Pogledaj demo 🎬
                   </Button>
                 </div>
 
-                <div className="flex items-center space-x-6 text-sm text-gray-600">
-                  <div className="flex items-center space-x-1">
-                    <Star className="h-4 w-4 text-yellow-500 fill-current" />
+                {/* Enhanced feature highlights */}
+                <div className="flex flex-wrap items-center gap-6 text-sm xl:text-base text-gray-600">
+                  <div className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
+                    <Star className="h-5 w-5 text-yellow-500 fill-current" />
                     <span className="font-medium">Besplatno 30 dana</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Smartphone className="h-4 w-4 text-green-500" />
+                  <div className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
+                    <Smartphone className="h-5 w-5 text-green-500" />
                     <span className="font-medium">iOS & Android</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Sparkles className="h-4 w-4 text-purple-500" />
+                  <div className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
+                    <Sparkles className="h-5 w-5 text-purple-500" />
                     <span className="font-medium">Bez dosade!</span>
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center justify-center">
-                <div className="relative">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                    width="500"
-                    height="750"
-                    alt="KeshCheck App - AI finansijski savetnik sa dozom humora"
-                    className="mx-auto rounded-3xl shadow-2xl w-full max-w-md lg:max-w-lg xl:max-w-xl"
-                    priority
-                  />
-                  {/* Subtle floating elements that don't compete with the real image */}
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-400 p-2 rounded-xl shadow-lg animate-pulse opacity-80">
-                    <Sparkles className="h-4 w-4 text-white" />
-                  </div>
-                  <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-green-400 to-blue-400 p-2 rounded-xl shadow-lg animate-bounce opacity-80">
-                    <TrendingUp className="h-4 w-4 text-white" />
+              {/* Right Column - Enhanced Image Carousel */}
+              <div className="flex items-center justify-center order-1 lg:order-2">
+                <div className="relative w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+                  
+                  {/* Main carousel container with glassmorphism */}
+                  <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+                    
+                    {/* Carousel images - we'll rotate through these */}
+                    <div className="relative overflow-hidden rounded-2xl">
+                      <div className="carousel-container">
+                        {/* Primary app image */}
+                        <div className="carousel-slide active">
+                          <Image
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                            width="400"
+                            height="800"
+                            alt="KeshCheck App - AI finansijski savetnik"
+                            className="mx-auto rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500"
+                            priority
+                          />
+                        </div>
+                        
+                        {/* We can add more slides here with different app screens */}
+                        <div className="carousel-slide">
+                          <Image
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                            width="400"
+                            height="800"
+                            alt="KeshCheck Dashboard"
+                            className="mx-auto rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500 opacity-80 saturate-150"
+                            style={{ filter: 'hue-rotate(30deg)' }}
+                          />
+                        </div>
+                        
+                        <div className="carousel-slide">
+                          <Image
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                            width="400"
+                            height="800"
+                            alt="KeshCheck Analytics"
+                            className="mx-auto rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500 opacity-80 saturate-150"
+                            style={{ filter: 'hue-rotate(60deg)' }}
+                          />
+                        </div>
+                      </div>
+                      
+                      {/* Carousel navigation dots */}
+                      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <div className="carousel-dot active w-3 h-3 bg-white rounded-full shadow-lg cursor-pointer"></div>
+                        <div className="carousel-dot w-3 h-3 bg-white/50 rounded-full shadow-lg cursor-pointer"></div>
+                        <div className="carousel-dot w-3 h-3 bg-white/50 rounded-full shadow-lg cursor-pointer"></div>
+                      </div>
+                    </div>
+                    
+                    {/* Enhanced floating elements with better positioning */}
+                    <div className="absolute -top-6 -right-6 bg-gradient-to-r from-yellow-400 to-orange-400 p-3 rounded-2xl shadow-xl animate-pulse">
+                      <Sparkles className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-green-400 to-blue-400 p-3 rounded-2xl shadow-xl animate-bounce">
+                      <TrendingUp className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="absolute top-1/4 -left-4 bg-gradient-to-r from-pink-400 to-purple-400 p-2 rounded-xl shadow-lg animate-ping">
+                      <Heart className="h-4 w-4 text-white" />
+                    </div>
+                    <div className="absolute top-3/4 -right-4 bg-gradient-to-r from-indigo-400 to-purple-400 p-2 rounded-xl shadow-lg animate-pulse delay-700">
+                      <Zap className="h-4 w-4 text-white" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Custom CSS for carousel animation */}
+          <style jsx>{`
+            .carousel-container {
+              position: relative;
+              width: 100%;
+              height: auto;
+            }
+            
+            .carousel-slide {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              opacity: 0;
+              transform: translateX(100%);
+              transition: all 0.8s ease-in-out;
+            }
+            
+            .carousel-slide.active {
+              position: relative;
+              opacity: 1;
+              transform: translateX(0);
+            }
+            
+            .carousel-dot.active {
+              background: white;
+              transform: scale(1.2);
+            }
+            
+            .carousel-dot {
+              transition: all 0.3s ease;
+            }
+            
+            .carousel-dot:hover {
+              transform: scale(1.1);
+            }
+            
+            @keyframes slideIn {
+              from {
+                opacity: 0;
+                transform: translateX(30px);
+              }
+              to {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            
+            @media (max-width: 1024px) {
+              .carousel-slide img {
+                max-width: 300px;
+              }
+            }
+            
+            @media (max-width: 640px) {
+              .carousel-slide img {
+                max-width: 250px;
+              }
+            }
+          `}</style>
+
+          {/* JavaScript for carousel functionality */}
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              let currentSlide = 0;
+              const slides = document.querySelectorAll('.carousel-slide');
+              const dots = document.querySelectorAll('.carousel-dot');
+              
+              function showSlide(index) {
+                slides.forEach((slide, i) => {
+                  slide.classList.toggle('active', i === index);
+                });
+                dots.forEach((dot, i) => {
+                  dot.classList.toggle('active', i === index);
+                });
+              }
+              
+              function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+              }
+              
+              // Auto-advance carousel every 4 seconds
+              setInterval(nextSlide, 4000);
+              
+              // Click handlers for dots
+              dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                  currentSlide = index;
+                  showSlide(currentSlide);
+                });
+              });
+            `
+          }} />
         </section>
 
         {/* Categories Preview with more fun styling */}
