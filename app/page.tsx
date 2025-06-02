@@ -176,45 +176,30 @@ export default function LandingPage() {
                     
                     {/* Carousel Images */}
                     {/* Single Featured Image with Dynamic Effects */}
-                    <div className="relative h-[600px] rounded-2xl overflow-hidden">
-                      
-                      {/* Main Featured Image */}
-                      <div className="relative w-full h-full">
-                        <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                          width="350"
-                          height="700"
-                          alt="KeshCheck AI Chat Interface"
-                          className="w-full h-full object-cover rounded-2xl transform hover:scale-105 transition-transform duration-500"
-                          priority
-                        />
-                        
-                        {/* Dynamic Color Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-pink-500/10 rounded-2xl animate-pulse"></div>
-                        
-                        {/* Bottom Overlay with Info */}
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 rounded-b-2xl">
-                          <h3 className="text-white font-bold text-xl mb-1">KeshCheck AI App</h3>
-                          <p className="text-white/90 text-sm">Pametne finansije sa dozom humora!</p>
-                        </div>
-                      </div>
-                    </div>
+<div className="relative h-[600px] rounded-2xl overflow-hidden">
+  
+  {/* Main Featured Image */}
+  <div className="relative w-full h-full">
+    <Image
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+      width="350"
+      height="700"
+      alt="KeshCheck AI Chat Interface"
+      className="w-full h-full object-cover rounded-2xl transform hover:scale-105 transition-transform duration-500"
+      priority
+    />
+    
+    {/* Subtle Dynamic Color Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 via-transparent to-pink-500/5 rounded-2xl animate-pulse"></div>
+  </div>
+</div>
 
-                    {/* Dynamic Feature Indicators */}
-                    <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-                      <div className="flex flex-col items-center space-y-1">
-                        <div className="w-3 h-3 rounded-full bg-white shadow-lg animate-pulse"></div>
-                        <span className="text-white text-xs font-medium">AI Chat</span>
-                      </div>
-                      <div className="flex flex-col items-center space-y-1">
-                        <div className="w-2 h-2 rounded-full bg-white/70 animate-bounce"></div>
-                        <span className="text-white/80 text-xs">Dashboard</span>
-                      </div>
-                      <div className="flex flex-col items-center space-y-1">
-                        <div className="w-2 h-2 rounded-full bg-white/50 animate-ping"></div>
-                        <span className="text-white/60 text-xs">Goals</span>
-                      </div>
-                    </div>
+{/* Clean Feature Indicators */}
+<div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+  <div className="w-3 h-3 rounded-full bg-white shadow-lg animate-pulse"></div>
+  <div className="w-2 h-2 rounded-full bg-white/70 animate-bounce"></div>
+  <div className="w-2 h-2 rounded-full bg-white/50 animate-ping"></div>
+</div>
 
                     {/* Floating elements */}
                     <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-400 p-3 rounded-2xl shadow-xl animate-pulse">
