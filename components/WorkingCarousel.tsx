@@ -27,7 +27,7 @@ export default function WorkingCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length)
-    }, 3000)
+    }, 1500)
 
     return () => clearInterval(interval)
   }, [images.length])
