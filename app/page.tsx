@@ -156,7 +156,7 @@ export default function LandingPage() {
                       size="lg"
                       className="h-14 px-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-xl text-lg font-semibold"
                     >
-                      Počni zabavu! 🚀
+                      Počni zabavu!
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
@@ -165,7 +165,7 @@ export default function LandingPage() {
                     size="lg"
                     className="h-14 px-8 border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-semibold"
                   >
-                    Pogledaj demo 🎬
+                    Pogledaj demo 
                   </Button>
                 </div>
 
@@ -256,14 +256,14 @@ export default function LandingPage() {
                 variant="secondary"
                 className="bg-gradient-to-r from-purple-200 to-pink-200 text-purple-800 border-purple-300"
               >
-                ✨ Zašto je KeshCheck drugačiji
+                Zašto je KeshCheck drugačiji
               </Badge>
               <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-gray-900">
                 AI koji te <span className="text-purple-600">stvarno razume</span>
               </h2>
               <p className="max-w-[900px] text-gray-700 md:text-xl">
                 Nema više dosadnih finansijskih aplikacija! KeshCheck koristi AI koji govori tvoj jezik, razume tvoje
-                navike i motiviše te na zabavan način! 🎉
+                navike i motiviše te na zabavan način! 
               </p>
             </div>
 
@@ -366,7 +366,7 @@ export default function LandingPage() {
                 variant="secondary"
                 className="bg-gradient-to-r from-blue-200 to-cyan-200 text-blue-800 border-blue-300"
               >
-                🚀 Super jednostavno
+                Super jednostavno
               </Badge>
               <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-gray-900">
                 Kako da počneš za <span className="text-purple-600">3 minuta</span>!
@@ -378,7 +378,7 @@ export default function LandingPage() {
                 <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white text-2xl font-bold shadow-xl">
                   1
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Povezuj račune 🏦</h3>
+                <h3 className="text-xl font-bold text-gray-900">Poveži račune </h3>
                 <p className="text-gray-700">
                   Bezbedno povezuj bankovne račune. Sve je šifrovano kao u banci - samo što je zabavnije! 🔒
                 </p>
@@ -388,9 +388,9 @@ export default function LandingPage() {
                 <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full text-white text-2xl font-bold shadow-xl">
                   2
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">AI radi svoj posao 🤖</h3>
+                <h3 className="text-xl font-bold text-gray-900">AI radi svoj posao</h3>
                 <p className="text-gray-700">
-                  Naš AI analizira tvoje troškove, uči navike i priprema personalizovane savete. Ti samo čekaš! ⏳
+                  Naš AI analizira tvoje troškove, uči navike i priprema personalizovane savete. Ti samo trošiš ili štediš! 
                 </p>
               </div>
 
@@ -398,9 +398,9 @@ export default function LandingPage() {
                 <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full text-white text-2xl font-bold shadow-xl">
                   3
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Uživaj u savetima! 🎉</h3>
+                <h3 className="text-xl font-bold text-gray-900">Uživaj u savetima! </h3>
                 <p className="text-gray-700">
-                  Počni da dobijaš savete, ciljeve i motivaciju koja te neće dosađivati. Štednja postaje zabavna! 💪
+                  Počni da dobijaš savete, ciljeve i motivaciju koja te neće dosađivati. Štednja postaje zabavna! 
                 </p>
               </div>
             </div>
@@ -495,7 +495,7 @@ export default function LandingPage() {
                 <CardContent>
                   <blockquote className="text-gray-700 mb-4 text-lg">
                     "Najbolja finansijska aplikacija ikad! AI razumije naš mentalitet i govori naš jezik. Štedim novac a
-                    smijem se svaki dan! 😄💸"
+                    smijem se svaki dan! 😄"
                   </blockquote>
                   <div className="flex items-center space-x-2">
                     <Image
@@ -524,7 +524,7 @@ export default function LandingPage() {
                 variant="secondary"
                 className="bg-gradient-to-r from-green-200 to-emerald-200 text-green-800 border-green-300"
               >
-                💰 Cene koje neće slomiti budžet
+                Cene koje neće slomiti budžet
               </Badge>
               <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-gray-900">
                 Jednostavno i <span className="text-gray-900">pošteno</span>!
@@ -534,7 +534,7 @@ export default function LandingPage() {
             <div className="mx-auto grid max-w-6xl items-center gap-6 lg:grid-cols-2">
               <Card className="border-2 border-gray-200 bg-white hover:shadow-xl transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-gray-900 text-2xl">Besplatno 🆓</CardTitle>
+                  <CardTitle className="text-gray-900 text-2xl">Besplatno </CardTitle>
                   <CardDescription className="text-lg text-gray-600">Savršeno za početak</CardDescription>
                   <div className="text-4xl font-bold text-gray-900">
                     €0<span className="text-lg font-normal text-gray-500">/mesečno</span>
@@ -629,8 +629,7 @@ export default function LandingPage() {
                 Spreman za finansijsku <span className="text-yellow-300">revoluciju</span>?
               </h2>
               <p className="max-w-[600px] text-xl text-purple-100">
-                Pridruži se hiljadama korisnika koji su već počeli da štede uz osmeh na licu! Tvoj AI finansijski drugar
-                te čeka! 🤖💰
+                Pridruži se hiljadama korisnika koji su već počeli da štede uz osmeh na licu!
               </p>
               <div className="flex flex-col gap-4 min-[400px]:flex-row">
                 <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -680,7 +679,7 @@ export default function LandingPage() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-gray-900">Proizvod 🚀</h4>
+              <h4 className="text-sm font-semibold text-gray-900">Proizvod </h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-gray-600 hover:text-purple-400 transition-colors">
@@ -701,7 +700,7 @@ export default function LandingPage() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-gray-900">Kompanija 🏢</h4>
+              <h4 className="text-sm font-semibold text-gray-900">Kompanija </h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-gray-600 hover:text-purple-400 transition-colors">
@@ -722,7 +721,7 @@ export default function LandingPage() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-gray-900">Podrška 🤝</h4>
+              <h4 className="text-sm font-semibold text-gray-900">Podrška </h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-gray-600 hover:text-purple-400 transition-colors">
