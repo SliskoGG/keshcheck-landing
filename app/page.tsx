@@ -75,8 +75,8 @@ export default function LandingPage() {
       </header>
 
       <main className="flex-1">
-       {/* Hero Section - IMPROVED VERSION */}
-        <section className="w-full py-12 md:py-16 lg:py-20 relative overflow-hidden">
+      {/* Hero Section - WITH CSS CAROUSEL */}
+        <section className="w-full py-16 md:py-20 lg:py-24 relative overflow-hidden">
           {/* Enhanced background elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-300 rounded-full opacity-20 animate-bounce"></div>
@@ -167,23 +167,53 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Right Column - Enhanced Image */}
+              {/* Right Column - CSS Carousel */}
               <div className="flex items-start justify-center lg:justify-end pt-8">
                 <div className="relative w-full max-w-sm lg:max-w-md">
                   
                   {/* Main container with glassmorphism */}
                   <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-6 shadow-2xl">
                     
-                    {/* Single enhanced image */}
+                    {/* CSS Carousel Container */}
                     <div className="relative overflow-hidden rounded-2xl">
-                      <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                        width="350"
-                        height="700"
-                        alt="KeshCheck App - AI finansijski savetnik"
-                        className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
-                        priority
-                      />
+                      <div className="carousel-container relative w-full h-auto">
+                        
+                        {/* Slide 1 - Original */}
+                        <div className="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000" style={{animationDelay: '0s'}}>
+                          <Image
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                            width="350"
+                            height="700"
+                            alt="KeshCheck App - Original"
+                            className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
+                            priority
+                          />
+                        </div>
+                        
+                        {/* Slide 2 - Purple tint */}
+                        <div className="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000" style={{animationDelay: '4s'}}>
+                          <Image
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                            width="350"
+                            height="700"
+                            alt="KeshCheck App - Purple Theme"
+                            className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
+                            style={{filter: 'hue-rotate(30deg) saturate(1.2)'}}
+                          />
+                        </div>
+                        
+                        {/* Slide 3 - Blue tint */}
+                        <div className="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000" style={{animationDelay: '8s'}}>
+                          <Image
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                            width="350"
+                            height="700"
+                            alt="KeshCheck App - Blue Theme"
+                            className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
+                            style={{filter: 'hue-rotate(60deg) saturate(1.2)'}}
+                          />
+                        </div>
+                      </div>
                     </div>
                     
                     {/* Enhanced floating elements */}
@@ -200,7 +230,7 @@ export default function LandingPage() {
                       <span className="text-white text-sm">🤣</span>
                     </div>
                     
-                    {/* Additional floating elements for dynamism */}
+                    {/* Additional floating elements */}
                     <div className="absolute top-1/2 left-0 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 p-2 rounded-full shadow-lg animate-bounce delay-300">
                       <span className="text-white text-sm">😊</span>
                     </div>
@@ -212,8 +242,26 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </section>
 
+          {/* CSS Animation for Carousel */}
+          <style jsx global>{`
+            .carousel-slide {
+              animation: carousel-fade 12s infinite;
+            }
+            
+            .carousel-slide:nth-child(1) { animation-delay: 0s; }
+            .carousel-slide:nth-child(2) { animation-delay: 4s; }
+            .carousel-slide:nth-child(3) { animation-delay: 8s; }
+            
+            @keyframes carousel-fade {
+              0% { opacity: 1; }
+              25% { opacity: 1; }
+              33.33% { opacity: 0; }
+              91.66% { opacity: 0; }
+              100% { opacity: 1; }
+            }
+          `}</style>
+        </section>
         {/* Categories Preview with more fun styling */}
         <section className="w-full py-12 bg-white">
           <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
