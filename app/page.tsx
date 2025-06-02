@@ -114,7 +114,7 @@ export default function LandingPage() {
                     variant="secondary"
                     className="w-fit bg-gradient-to-r from-yellow-200 to-orange-200 text-orange-800 border-orange-300 shadow-sm"
                   >
-                    💰 Finansije koje ne dosađuju!
+                    Finansije od kojih ne boli glava.
                   </Badge>
                   <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl text-gray-900">
                     <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">
@@ -559,7 +559,7 @@ export default function LandingPage() {
                 <CardFooter>
                   <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <Button className="w-full text-lg h-12" variant="outline">
-                      Počni besplatno! 🚀
+                      Počni besplatno! 
                     </Button>
                   </Link>
                 </CardFooter>
@@ -637,7 +637,7 @@ export default function LandingPage() {
                     size="lg"
                     className="h-16 px-12 bg-white text-purple-600 hover:bg-gray-100 text-xl font-bold shadow-2xl"
                   >
-                    Počni štednju ODMAH! 🎉
+                    Počni štednju ODMAH! 
                     <ArrowRight className="ml-3 h-6 w-6" />
                   </Button>
                 </Link>
@@ -646,7 +646,7 @@ export default function LandingPage() {
                   size="lg"
                   className="h-16 px-12 border-2 border-white text-white bg-white/10 backdrop-blur-sm hover:bg-white hover:text-purple-600 text-xl font-bold"
                 >
-                  Pogledaj demo 🎬
+                  Pogledaj demo 
                 </Button>
               </div>
               <div className="flex items-center space-x-8 text-lg text-purple-100">
@@ -673,8 +673,7 @@ export default function LandingPage() {
                 </span>
               </div>
               <p className="text-sm text-gray-600">
-                Finansijska aplikacija sa AI-jem koji te razume, motiviše i ponekad malo zadirkuje! Napravljeno sa ❤️ za
-                Balkan! 🌍
+                Finansijska aplikacija sa AI-jem koji te razume, motiviše i ponekad malo zadirkuje! 
               </p>
             </div>
 
