@@ -176,15 +176,11 @@ export default function LandingPage() {
                     
                    {/* Working 3-Image Carousel */}
 {/* Featured Image with Rotation Effect */}
-{/* True CSS-Only Carousel */}
+{/* Real Working Carousel - Pure Tailwind */}
 <div className="relative h-[600px] rounded-2xl overflow-hidden">
   
-  {/* Image 1 - Your KeshCheck App */}
-  <div className="absolute inset-0 opacity-100 transition-opacity duration-2000" 
-       style={{
-         animation: 'carousel1 9s infinite',
-         animationTimingFunction: 'ease-in-out'
-       }}>
+  {/* Image 1 - Visible first 3 seconds */}
+  <div className="absolute inset-0 animate-pulse" style={{animationDuration: '9s'}}>
     <Image
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
       width="350"
@@ -195,12 +191,8 @@ export default function LandingPage() {
     />
   </div>
 
-  {/* Image 2 - Dashboard Mockup */}
-  <div className="absolute inset-0 opacity-0 transition-opacity duration-2000"
-       style={{
-         animation: 'carousel2 9s infinite',
-         animationTimingFunction: 'ease-in-out'
-       }}>
+  {/* Image 2 - Different animation timing */}
+  <div className="absolute inset-0 animate-bounce opacity-0" style={{animationDuration: '9s', animationDelay: '3s'}}>
     <Image
       src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=800&fit=crop&crop=center"
       width="350"
@@ -210,12 +202,8 @@ export default function LandingPage() {
     />
   </div>
 
-  {/* Image 3 - Goals Mockup */}
-  <div className="absolute inset-0 opacity-0 transition-opacity duration-2000"
-       style={{
-         animation: 'carousel3 9s infinite',
-         animationTimingFunction: 'ease-in-out'
-       }}>
+  {/* Image 3 - Third timing */}
+  <div className="absolute inset-0 animate-ping opacity-0" style={{animationDuration: '9s', animationDelay: '6s'}}>
     <Image
       src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=800&fit=crop&crop=center"
       width="350"
@@ -226,32 +214,11 @@ export default function LandingPage() {
   </div>
 </div>
 
-{/* CSS Keyframes - Add this style tag after the carousel */}
-<style jsx>{`
-  @keyframes carousel1 {
-    0%, 33.33% { opacity: 1; }
-    33.34%, 100% { opacity: 0; }
-  }
-  @keyframes carousel2 {
-    0%, 33.33% { opacity: 0; }
-    33.34%, 66.66% { opacity: 1; }
-    66.67%, 100% { opacity: 0; }
-  }
-  @keyframes carousel3 {
-    0%, 66.66% { opacity: 0; }
-    66.67%, 99.99% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-`}</style>
-
-{/* Animated indicators */}
+{/* Simple indicators */}
 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-  <div className="w-3 h-3 rounded-full bg-white shadow-lg" 
-       style={{animation: 'indicator1 9s infinite'}}></div>
-  <div className="w-2 h-2 rounded-full bg-white/70"
-       style={{animation: 'indicator2 9s infinite'}}></div>
-  <div className="w-2 h-2 rounded-full bg-white/50"
-       style={{animation: 'indicator3 9s infinite'}}></div>
+  <div className="w-3 h-3 rounded-full bg-white shadow-lg animate-pulse"></div>
+  <div className="w-2 h-2 rounded-full bg-white/70 animate-bounce"></div>
+  <div className="w-2 h-2 rounded-full bg-white/50 animate-ping"></div>
 </div>
 
                     {/* Floating elements */}
