@@ -75,7 +75,7 @@ export default function LandingPage() {
       </header>
 
       <main className="flex-1">
-     {/* Hero Section - WITH PURE CSS CAROUSEL */}
+        {/* Hero Section - WITH MODERN CAROUSEL */}
         <section className="w-full py-16 md:py-20 lg:py-24 relative overflow-hidden">
           {/* Enhanced background elements */}
           <div className="absolute inset-0 overflow-hidden">
@@ -167,77 +167,88 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Right Column - Multiple Images for "Carousel Effect" */}
               {/* Right Column - Modern 3-Image Carousel */}
-<div className="flex items-start justify-center lg:justify-end pt-8">
-  <div className="relative w-full max-w-sm lg:max-w-md">
-    
-    {/* Main carousel container */}
-    <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-6 shadow-2xl">
-      
-      {/* Carousel Images */}
-      <div className="relative h-[600px] rounded-2xl overflow-hidden">
-        
-        {/* Image 1 - Main (AI Chat) */}
-        <div className="absolute inset-0 opacity-100 scale-100 transition-all duration-1000 animate-pulse">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-            width="350"
-            height="700"
-            alt="KeshCheck AI Chat Interface"
-            className="w-full h-full object-cover rounded-2xl"
-            priority
-          />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 rounded-b-2xl">
-            <h3 className="text-white font-bold text-xl mb-1">AI Chat</h3>
-            <p className="text-white/90 text-sm">Razgovaraj sa AI-jem kao sa prijateljem!</p>
+              <div className="flex items-start justify-center lg:justify-end pt-8">
+                <div className="relative w-full max-w-sm lg:max-w-md">
+                  
+                  {/* Main carousel container */}
+                  <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-6 shadow-2xl">
+                    
+                    {/* Carousel Images */}
+                    <div className="relative h-[600px] rounded-2xl overflow-hidden">
+                      
+                      {/* Image 1 - Main (AI Chat) */}
+                      <div className="absolute inset-0 opacity-100 scale-100 transition-all duration-1000 animate-pulse">
+                        <Image
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                          width="350"
+                          height="700"
+                          alt="KeshCheck AI Chat Interface"
+                          className="w-full h-full object-cover rounded-2xl"
+                          priority
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 rounded-b-2xl">
+                          <h3 className="text-white font-bold text-xl mb-1">AI Chat</h3>
+                          <p className="text-white/90 text-sm">Razgovaraj sa AI-jem kao sa prijateljem!</p>
+                        </div>
+                      </div>
+
+                      {/* Image 2 - Dashboard */}
+                      <div className="absolute inset-0 opacity-20 scale-95 transition-all duration-1000 animate-bounce">
+                        <Image
+                          src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=800&fit=crop&crop=center"
+                          width="350"
+                          height="700"
+                          alt="KeshCheck Dashboard"
+                          className="w-full h-full object-cover rounded-2xl"
+                        />
+                      </div>
+
+                      {/* Image 3 - Savings */}
+                      <div className="absolute inset-0 opacity-10 scale-90 transition-all duration-1000 animate-ping">
+                        <Image
+                          src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=800&fit=crop&crop=center"
+                          width="350"
+                          height="700"
+                          alt="KeshCheck Savings Goals"
+                          className="w-full h-full object-cover rounded-2xl"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Carousel indicators */}
+                    <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+                      <div className="w-3 h-3 rounded-full bg-white shadow-lg animate-pulse"></div>
+                      <div className="w-2 h-2 rounded-full bg-white/50 animate-bounce"></div>
+                      <div className="w-2 h-2 rounded-full bg-white/30 animate-ping"></div>
+                    </div>
+
+                    {/* Floating elements */}
+                    <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-400 p-3 rounded-2xl shadow-xl animate-pulse">
+                      <span className="text-white text-lg">😊</span>
+                    </div>
+                    <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-green-400 to-blue-400 p-3 rounded-2xl shadow-xl animate-bounce">
+                      <span className="text-white text-lg">😄</span>
+                    </div>
+                    <div className="absolute top-1/4 -left-3 bg-gradient-to-r from-pink-400 to-purple-400 p-2 rounded-xl shadow-lg animate-ping">
+                      <span className="text-white text-sm">😅</span>
+                    </div>
+                    <div className="absolute top-3/4 -right-3 bg-gradient-to-r from-indigo-400 to-purple-400 p-2 rounded-xl shadow-lg animate-pulse">
+                      <span className="text-white text-sm">🤣</span>
+                    </div>
+                    <div className="absolute top-1/2 left-0 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 p-2 rounded-full shadow-lg animate-bounce">
+                      <span className="text-white text-sm">😊</span>
+                    </div>
+                    <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-full shadow-lg animate-pulse">
+                      <span className="text-white text-sm">🤣</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
 
-        {/* Image 2 - Dashboard */}
-        <div className="absolute inset-0 opacity-20 scale-95 transition-all duration-1000 animate-bounce">
-          <Image
-            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=800&fit=crop&crop=center"
-            width="350"
-            height="700"
-            alt="KeshCheck Dashboard"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </div>
-
-        {/* Image 3 - Savings */}
-        <div className="absolute inset-0 opacity-10 scale-90 transition-all duration-1000 animate-ping">
-          <Image
-            src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=800&fit=crop&crop=center"
-            width="350"
-            height="700"
-            alt="KeshCheck Savings Goals"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </div>
-      </div>
-
-      {/* Carousel indicators */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-        <div className="w-3 h-3 rounded-full bg-white shadow-lg animate-pulse"></div>
-        <div className="w-2 h-2 rounded-full bg-white/50 animate-bounce"></div>
-        <div className="w-2 h-2 rounded-full bg-white/30 animate-ping"></div>
-      </div>
-
-      {/* Floating elements */}
-      <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-400 p-3 rounded-2xl shadow-xl animate-pulse">
-        <span className="text-white text-lg">😊</span>
-      </div>
-      <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-green-400 to-blue-400 p-3 rounded-2xl shadow-xl animate-bounce">
-        <span className="text-white text-lg">😄</span>
-      </div>
-      <div className="absolute top-1/4 -left-3 bg-gradient-to-r from-pink-400 to-purple-400 p-2 rounded-xl shadow-lg animate-ping">
-        <span className="text-white text-sm">😅</span>
-      </div>
-      <div className="absolute top-3/4 -right-3 bg-gradient-to-r from-indigo-400 to-purple-400 p-2 rounded-xl shadow-lg animate-pulse">
-        <span className="text-white text-sm">🤣</span>
-      </div>
-      <div className="absolute top-1/2 left-0 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 p-
         {/* Categories Preview with more fun styling */}
         <section className="w-full py-12 bg-white">
           <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
