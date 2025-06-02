@@ -75,7 +75,7 @@ export default function LandingPage() {
       </header>
 
       <main className="flex-1">
-      {/* Hero Section - WITH CSS CAROUSEL */}
+     {/* Hero Section - WITH PURE CSS CAROUSEL */}
         <section className="w-full py-16 md:py-20 lg:py-24 relative overflow-hidden">
           {/* Enhanced background elements */}
           <div className="absolute inset-0 overflow-hidden">
@@ -167,52 +167,48 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Right Column - CSS Carousel */}
+              {/* Right Column - Multiple Images for "Carousel Effect" */}
               <div className="flex items-start justify-center lg:justify-end pt-8">
                 <div className="relative w-full max-w-sm lg:max-w-md">
                   
                   {/* Main container with glassmorphism */}
                   <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-6 shadow-2xl">
                     
-                    {/* CSS Carousel Container */}
+                    {/* Stacked Images with Different Effects */}
                     <div className="relative overflow-hidden rounded-2xl">
-                      <div className="carousel-container relative w-full h-auto">
-                        
-                        {/* Slide 1 - Original */}
-                        <div className="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000" style={{animationDelay: '0s'}}>
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                            width="350"
-                            height="700"
-                            alt="KeshCheck App - Original"
-                            className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
-                            priority
-                          />
-                        </div>
-                        
-                        {/* Slide 2 - Purple tint */}
-                        <div className="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000" style={{animationDelay: '4s'}}>
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                            width="350"
-                            height="700"
-                            alt="KeshCheck App - Purple Theme"
-                            className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
-                            style={{filter: 'hue-rotate(30deg) saturate(1.2)'}}
-                          />
-                        </div>
-                        
-                        {/* Slide 3 - Blue tint */}
-                        <div className="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000" style={{animationDelay: '8s'}}>
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                            width="350"
-                            height="700"
-                            alt="KeshCheck App - Blue Theme"
-                            className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
-                            style={{filter: 'hue-rotate(60deg) saturate(1.2)'}}
-                          />
-                        </div>
+                      
+                      {/* Base Image - Always visible */}
+                      <div className="relative">
+                        <Image
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                          width="350"
+                          height="700"
+                          alt="KeshCheck App - Original"
+                          className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
+                          priority
+                        />
+                      </div>
+                      
+                      {/* Overlay Image 1 - Fades in and out */}
+                      <div className="absolute inset-0 opacity-0 animate-pulse">
+                        <Image
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                          width="350"
+                          height="700"
+                          alt="KeshCheck App - Purple Theme"
+                          className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500 hue-rotate-30 saturate-150"
+                        />
+                      </div>
+                      
+                      {/* Overlay Image 2 - Different timing */}
+                      <div className="absolute inset-0 opacity-0 animate-ping">
+                        <Image
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                          width="350"
+                          height="700"
+                          alt="KeshCheck App - Blue Theme"
+                          className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500 hue-rotate-60 saturate-150"
+                        />
                       </div>
                     </div>
                     
@@ -231,10 +227,10 @@ export default function LandingPage() {
                     </div>
                     
                     {/* Additional floating elements */}
-                    <div className="absolute top-1/2 left-0 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 p-2 rounded-full shadow-lg animate-bounce delay-300">
+                    <div className="absolute top-1/2 left-0 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 p-2 rounded-full shadow-lg animate-bounce">
                       <span className="text-white text-sm">😊</span>
                     </div>
-                    <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-full shadow-lg animate-pulse delay-500">
+                    <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-full shadow-lg animate-pulse">
                       <span className="text-white text-sm">🤣</span>
                     </div>
                   </div>
@@ -242,25 +238,6 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-
-          {/* CSS Animation for Carousel */}
-          <style jsx global>{`
-            .carousel-slide {
-              animation: carousel-fade 12s infinite;
-            }
-            
-            .carousel-slide:nth-child(1) { animation-delay: 0s; }
-            .carousel-slide:nth-child(2) { animation-delay: 4s; }
-            .carousel-slide:nth-child(3) { animation-delay: 8s; }
-            
-            @keyframes carousel-fade {
-              0% { opacity: 1; }
-              25% { opacity: 1; }
-              33.33% { opacity: 0; }
-              91.66% { opacity: 0; }
-              100% { opacity: 1; }
-            }
-          `}</style>
         </section>
         {/* Categories Preview with more fun styling */}
         <section className="w-full py-12 bg-white">
