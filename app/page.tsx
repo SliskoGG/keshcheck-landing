@@ -174,31 +174,49 @@ export default function LandingPage() {
                   {/* Main carousel container */}
                   <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-6 shadow-2xl">
                     
-                    {/* Carousel Images */}
-                    {/* Single Featured Image with Dynamic Effects */}
+                   {/* Working 3-Image Carousel */}
 <div className="relative h-[600px] rounded-2xl overflow-hidden">
   
-  {/* Main Featured Image */}
-  <div className="relative w-full h-full">
+  {/* Image 1 - AI Chat (visible for 3 seconds) */}
+  <div className="absolute inset-0 opacity-100 transition-opacity duration-1000 animate-pulse" style={{animationDuration: '9s'}}>
     <Image
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
       width="350"
       height="700"
       alt="KeshCheck AI Chat Interface"
-      className="w-full h-full object-cover rounded-2xl transform hover:scale-105 transition-transform duration-500"
+      className="w-full h-full object-cover rounded-2xl"
       priority
     />
-    
-    {/* Subtle Dynamic Color Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 via-transparent to-pink-500/5 rounded-2xl animate-pulse"></div>
+  </div>
+
+  {/* Image 2 - Dashboard (visible after 3 seconds) */}
+  <div className="absolute inset-0 opacity-0 transition-opacity duration-1000 animate-bounce" style={{animationDelay: '3s', animationDuration: '9s'}}>
+    <Image
+      src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=800&fit=crop&crop=center"
+      width="350"
+      height="700"
+      alt="KeshCheck Dashboard"
+      className="w-full h-full object-cover rounded-2xl"
+    />
+  </div>
+
+  {/* Image 3 - Savings (visible after 6 seconds) */}
+  <div className="absolute inset-0 opacity-0 transition-opacity duration-1000 animate-ping" style={{animationDelay: '6s', animationDuration: '9s'}}>
+    <Image
+      src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=800&fit=crop&crop=center"
+      width="350"
+      height="700"
+      alt="KeshCheck Savings Goals"
+      className="w-full h-full object-cover rounded-2xl"
+    />
   </div>
 </div>
 
-{/* Clean Feature Indicators */}
-<div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+{/* Carousel Indicators */}
+<div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
   <div className="w-3 h-3 rounded-full bg-white shadow-lg animate-pulse"></div>
-  <div className="w-2 h-2 rounded-full bg-white/70 animate-bounce"></div>
-  <div className="w-2 h-2 rounded-full bg-white/50 animate-ping"></div>
+  <div className="w-2 h-2 rounded-full bg-white/70"></div>
+  <div className="w-2 h-2 rounded-full bg-white/50"></div>
 </div>
 
                     {/* Floating elements */}
