@@ -176,25 +176,82 @@ export default function LandingPage() {
                     
                    {/* Working 3-Image Carousel */}
 {/* Featured Image with Rotation Effect */}
+{/* True CSS-Only Carousel */}
 <div className="relative h-[600px] rounded-2xl overflow-hidden">
-  <Image
-    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-    width="350"
-    height="700"
-    alt="KeshCheck AI Chat Interface"
-    className="w-full h-full object-cover rounded-2xl transform hover:scale-105 transition-transform duration-500"
-    priority
-  />
   
-  {/* Subtle gradient overlay */}
-  <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 via-transparent to-pink-500/5 rounded-2xl"></div>
+  {/* Image 1 - Your KeshCheck App */}
+  <div className="absolute inset-0 opacity-100 transition-opacity duration-2000" 
+       style={{
+         animation: 'carousel1 9s infinite',
+         animationTimingFunction: 'ease-in-out'
+       }}>
+    <Image
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+      width="350"
+      height="700"
+      alt="KeshCheck AI Chat Interface"
+      className="w-full h-full object-cover rounded-2xl"
+      priority
+    />
+  </div>
+
+  {/* Image 2 - Dashboard Mockup */}
+  <div className="absolute inset-0 opacity-0 transition-opacity duration-2000"
+       style={{
+         animation: 'carousel2 9s infinite',
+         animationTimingFunction: 'ease-in-out'
+       }}>
+    <Image
+      src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=800&fit=crop&crop=center"
+      width="350"
+      height="700"
+      alt="KeshCheck Dashboard"
+      className="w-full h-full object-cover rounded-2xl"
+    />
+  </div>
+
+  {/* Image 3 - Goals Mockup */}
+  <div className="absolute inset-0 opacity-0 transition-opacity duration-2000"
+       style={{
+         animation: 'carousel3 9s infinite',
+         animationTimingFunction: 'ease-in-out'
+       }}>
+    <Image
+      src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&h=800&fit=crop&crop=center"
+      width="350"
+      height="700"
+      alt="KeshCheck Savings Goals"
+      className="w-full h-full object-cover rounded-2xl"
+    />
+  </div>
 </div>
 
-{/* Clean indicators */}
+{/* CSS Keyframes - Add this style tag after the carousel */}
+<style jsx>{`
+  @keyframes carousel1 {
+    0%, 33.33% { opacity: 1; }
+    33.34%, 100% { opacity: 0; }
+  }
+  @keyframes carousel2 {
+    0%, 33.33% { opacity: 0; }
+    33.34%, 66.66% { opacity: 1; }
+    66.67%, 100% { opacity: 0; }
+  }
+  @keyframes carousel3 {
+    0%, 66.66% { opacity: 0; }
+    66.67%, 99.99% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+`}</style>
+
+{/* Animated indicators */}
 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-  <div className="w-3 h-3 rounded-full bg-white shadow-lg"></div>
-  <div className="w-2 h-2 rounded-full bg-white/70"></div>
-  <div className="w-2 h-2 rounded-full bg-white/50"></div>
+  <div className="w-3 h-3 rounded-full bg-white shadow-lg" 
+       style={{animation: 'indicator1 9s infinite'}}></div>
+  <div className="w-2 h-2 rounded-full bg-white/70"
+       style={{animation: 'indicator2 9s infinite'}}></div>
+  <div className="w-2 h-2 rounded-full bg-white/50"
+       style={{animation: 'indicator3 9s infinite'}}></div>
 </div>
 
                     {/* Floating elements */}
