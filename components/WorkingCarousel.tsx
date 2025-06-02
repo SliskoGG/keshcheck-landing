@@ -54,12 +54,8 @@ export default function ModernCarousel() {
           {images.map((image, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-1000 transform ${
-                index === currentImage 
-                  ? 'opacity-100 scale-100 rotate-0' 
-                  : index === (currentImage + 1) % images.length
-                  ? 'opacity-30 scale-95 rotate-3 translate-x-8'
-                  : 'opacity-10 scale-90 -rotate-3 -translate-x-8'
+              className={`absolute inset-0 transition-all duration-1000 ${
+                index === currentImage ? 'opacity-100 z-10' : 'opacity-0 z-0'
               }`}
             >
               <Image
@@ -120,16 +116,6 @@ export default function ModernCarousel() {
               width: `${((currentImage + 1) / images.length) * 100}%`
             }}
           ></div>
-        </div>
-
-        {/* Feature Tags */}
-        <div className="absolute top-6 left-6 flex space-x-2">
-          <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full border border-white/30">
-            <span className="text-white text-xs font-medium">Featured</span>
-          </div>
-          <div className={`bg-gradient-to-r ${images[currentImage].color} px-3 py-1 rounded-full shadow-lg`}>
-            <span className="text-white text-xs font-bold">New</span>
-          </div>
         </div>
       </div>
 
