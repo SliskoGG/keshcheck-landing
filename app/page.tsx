@@ -75,8 +75,7 @@ export default function LandingPage() {
       </header>
 
       <main className="flex-1">
-        {/* Hero Section - IMPROVED VERSION */}
-      {/* Hero Section - IMPROVED VERSION */}
+       {/* Hero Section - IMPROVED VERSION */}
         <section className="w-full py-12 md:py-16 lg:py-20 relative overflow-hidden">
           {/* Enhanced background elements */}
           <div className="absolute inset-0 overflow-hidden">
@@ -168,68 +167,44 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Right Column - Image Carousel */}
+              {/* Right Column - Enhanced Image */}
               <div className="flex items-start justify-center lg:justify-end pt-8">
-                <div className="relative w-full max-w-sm lg:max-w-md xl:max-w-lg">
+                <div className="relative w-full max-w-sm lg:max-w-md">
                   
                   {/* Main container with glassmorphism */}
                   <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl p-6 shadow-2xl">
                     
-                    {/* Carousel container */}
-                    <div className="relative overflow-hidden rounded-2xl carousel-wrapper">
-                      {/* Slide 1 - Original */}
-                      <div className="carousel-slide active">
-                        <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                          width="300"
-                          height="600"
-                          alt="KeshCheck App - AI finansijski savetnik"
-                          className="mx-auto rounded-2xl shadow-2xl w-full max-w-[300px] transform hover:scale-105 transition-transform duration-500"
-                          priority
-                        />
-                      </div>
-                      
-                      {/* Slide 2 - Tinted version */}
-                      <div className="carousel-slide">
-                        <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                          width="300"
-                          height="600"
-                          alt="KeshCheck Dashboard"
-                          className="mx-auto rounded-2xl shadow-2xl w-full max-w-[300px] transform hover:scale-105 transition-transform duration-500 hue-rotate-30"
-                        />
-                      </div>
-                      
-                      {/* Slide 3 - Another tinted version */}
-                      <div className="carousel-slide">
-                        <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
-                          width="300"
-                          height="600"
-                          alt="KeshCheck Analytics"
-                          className="mx-auto rounded-2xl shadow-2xl w-full max-w-[300px] transform hover:scale-105 transition-transform duration-500 hue-rotate-60"
-                        />
-                      </div>
-                      
-                      {/* Carousel dots */}
-                      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                        <div className="carousel-dot active w-3 h-3 bg-white rounded-full shadow-lg cursor-pointer opacity-80"></div>
-                        <div className="carousel-dot w-3 h-3 bg-white/50 rounded-full shadow-lg cursor-pointer"></div>
-                        <div className="carousel-dot w-3 h-3 bg-white/50 rounded-full shadow-lg cursor-pointer"></div>
-                      </div>
+                    {/* Single enhanced image */}
+                    <div className="relative overflow-hidden rounded-2xl">
+                      <Image
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lifestyle%20Fintech%20App%20with%20AI%20Chatbot-p5I2tVh986IT5YRRU1xtVXRmZxCKpG.png"
+                        width="350"
+                        height="700"
+                        alt="KeshCheck App - AI finansijski savetnik"
+                        className="mx-auto rounded-2xl shadow-2xl w-full max-w-[350px] h-auto transform hover:scale-105 transition-transform duration-500"
+                        priority
+                      />
                     </div>
                     
                     {/* Enhanced floating elements */}
-                    <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-400 p-2 rounded-2xl shadow-xl animate-pulse">
+                    <div className="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-400 p-3 rounded-2xl shadow-xl animate-pulse">
                       <span className="text-white text-lg">😊</span>
                     </div>
-                    <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-green-400 to-blue-400 p-2 rounded-2xl shadow-xl animate-bounce">
+                    <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-green-400 to-blue-400 p-3 rounded-2xl shadow-xl animate-bounce">
                       <span className="text-white text-lg">😄</span>
                     </div>
-                    <div className="absolute top-1/4 -left-3 bg-gradient-to-r from-pink-400 to-purple-400 p-1 rounded-xl shadow-lg animate-ping">
+                    <div className="absolute top-1/4 -left-3 bg-gradient-to-r from-pink-400 to-purple-400 p-2 rounded-xl shadow-lg animate-ping">
                       <span className="text-white text-sm">😅</span>
                     </div>
-                    <div className="absolute top-3/4 -right-3 bg-gradient-to-r from-indigo-400 to-purple-400 p-1 rounded-xl shadow-lg animate-pulse">
+                    <div className="absolute top-3/4 -right-3 bg-gradient-to-r from-indigo-400 to-purple-400 p-2 rounded-xl shadow-lg animate-pulse">
+                      <span className="text-white text-sm">🤣</span>
+                    </div>
+                    
+                    {/* Additional floating elements for dynamism */}
+                    <div className="absolute top-1/2 left-0 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 p-2 rounded-full shadow-lg animate-bounce delay-300">
+                      <span className="text-white text-sm">😊</span>
+                    </div>
+                    <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-full shadow-lg animate-pulse delay-500">
                       <span className="text-white text-sm">🤣</span>
                     </div>
                   </div>
@@ -237,83 +212,6 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-
-          {/* CSS for carousel */}
-          <style jsx>{`
-            .carousel-wrapper {
-              position: relative;
-              height: auto;
-            }
-            
-            .carousel-slide {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              opacity: 0;
-              transform: translateX(100%);
-              transition: all 0.8s ease-in-out;
-            }
-            
-            .carousel-slide.active {
-              position: relative;
-              opacity: 1;
-              transform: translateX(0);
-            }
-            
-            .carousel-dot.active {
-              opacity: 1;
-              transform: scale(1.2);
-            }
-            
-            .carousel-dot {
-              transition: all 0.3s ease;
-            }
-            
-            .hue-rotate-30 {
-              filter: hue-rotate(30deg) saturate(1.2);
-            }
-            
-            .hue-rotate-60 {
-              filter: hue-rotate(60deg) saturate(1.2);
-            }
-          `}</style>
-
-          {/* Carousel JavaScript */}
-          <script dangerouslySetInnerHTML={{
-            __html: `
-              document.addEventListener('DOMContentLoaded', function() {
-                let currentSlide = 0;
-                const slides = document.querySelectorAll('.carousel-slide');
-                const dots = document.querySelectorAll('.carousel-dot');
-                
-                function showSlide(index) {
-                  slides.forEach((slide, i) => {
-                    slide.classList.toggle('active', i === index);
-                  });
-                  dots.forEach((dot, i) => {
-                    dot.classList.toggle('active', i === index);
-                  });
-                }
-                
-                function nextSlide() {
-                  currentSlide = (currentSlide + 1) % slides.length;
-                  showSlide(currentSlide);
-                }
-                
-                // Auto-advance carousel every 4 seconds
-                setInterval(nextSlide, 4000);
-                
-                // Click handlers for dots
-                dots.forEach((dot, index) => {
-                  dot.addEventListener('click', () => {
-                    currentSlide = index;
-                    showSlide(currentSlide);
-                  });
-                });
-              });
-            `
-          }} />
         </section>
 
         {/* Categories Preview with more fun styling */}
