@@ -97,7 +97,7 @@ export default function LandingPage() {
                     variant="secondary"
                     className="w-fit bg-gradient-to-r from-yellow-200 to-orange-200 text-orange-800 border-orange-300 shadow-sm"
                   >
-                    Finansije koje ne dosađuju!
+                    Finansije od kojih ne boli glava.
                   </Badge>
                   
                   <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl text-gray-900 leading-tight">
@@ -621,7 +621,7 @@ export default function LandingPage() {
               </h2>
               <p className="max-w-[600px] text-xl text-purple-100">
                 Pridruži se hiljadama korisnika koji su već počeli da štede uz osmeh na licu! Tvoj AI finansijski drugar
-                te čeka! 🤖
+                te čeka! 
               </p>
               <div className="flex flex-col gap-4 min-[400px]:flex-row">
                 <Link href="https://keshcheck-app.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -629,7 +629,7 @@ export default function LandingPage() {
                     size="lg"
                     className="h-16 px-12 bg-white text-purple-600 hover:bg-gray-100 text-xl font-bold shadow-2xl"
                   >
-                    Počni štednju ODMAH! 😊
+                    Počni štednju ODMAH! 
                   </Button>
                 </Link>
                 <Button
