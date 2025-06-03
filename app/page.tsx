@@ -142,7 +142,7 @@ export default function LandingPage() {
                       size="lg"
                       className="h-14 px-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-xl text-lg font-semibold rounded-2xl transform hover:scale-105 transition-all duration-300"
                     >
-                      Počni zabavu! 🚀
+                      Preuzmi aplikaciju
                     </Button>
                   </Link>
                   <Button
